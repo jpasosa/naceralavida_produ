@@ -1,0 +1,846 @@
+/*********************** ESTILO NACERALAVIDA ***************************/
+
+
+/*****************************************/
+/***** GENERALES *************************/
+/*****************************************/
+
+* {
+	font-family: "Tahoma", "Arial", Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+}
+
+body {
+	background-color: #bc5fd2;
+	background-image: url('../img/fondo.jpg');
+	background-repeat: repeat-x;
+	color: #666666;
+}
+
+a {
+	text-decoration: none;
+}
+
+div.continente {
+/*	font-size: 11px;*/
+	margin: 14px 0 0 20px;
+	overflow: hidden;
+/*	padding: 0 0 0 36px;*/
+/*	text-align: justify;*/
+	width: 497px;
+}
+
+
+/*****************************************/
+/***** CONTENIDO *************************/
+
+div#rotulo {
+/*	background-image: url(../img/rotulo.jpg); */
+	background-repeat: no-repeat;
+	height: 171px;
+	width: 811px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-size: 1px;
+}
+
+div#cuerpo {
+	background-color: transparent;
+/*	height: 614px;*/
+	overflow: hidden;
+	margin: 10px auto 0 auto;
+	text-align: center;
+	width: 811px;
+}
+
+div#contenedor {
+	/*background-image: url('../img/fondo_general_811px.jpg');	*/
+	background-repeat: repeat-y;
+	overflow: hidden;
+	height: 380px;
+}
+
+div#contenedor.quienes {
+	height: 500px;
+}
+
+
+
+div.margen_izq {
+	float: left;
+	height: 352px;
+	width: 245px;
+}
+
+
+div#quienes.margen_izq {
+height: 700px;
+background-color: white;
+}
+
+div.margen_izq#secc_servicios {
+	background-image: url(../img/foto_servicios.jpg);
+	font-size: 1px;
+	float: left;
+}
+
+div.margen_izq#secc_clientes {
+	height: 1300px;
+}
+
+div#contenido {
+	background-color: white;
+	float: left;
+	height: 358px;
+	padding: 22px 20px 0 20px;
+	width: 526px;
+	/*overflow-x:hidden; /*Solucion para el IE7*/
+	/*overflow-y:auto; /*Solucion para el IE7*/
+	
+}
+
+
+div#contenido.quienes {
+	height: 700px;
+}
+
+
+
+
+
+
+h3.titulo {
+	color: #c777da;
+	font-family:tahoma;
+	font-size:14px;
+	font-style:normal;
+	font-weight:bold;
+	text-align:left;
+
+}
+
+p.texto_contenido {
+	margin: 12px 0 0 0;
+	text-align: justify;
+}
+
+div#contenido_clientes .cat_clientes {
+	float: left;
+	margin: 0 0 14px 0;
+	width: 450px;
+}
+
+div#contenido_clientes h4 {
+	margin: 0 0 10px 0;
+}
+
+div#contenido_clientes .cliente{
+	margin: 0 0 10px 0;
+}
+
+
+/*****************************************/
+/**********	BOTONERA PPAL	****************/
+
+div#botonera_ppal {
+	background-color: #FFFFFF;
+	/*background-image: url('../img/fondo_general_811px.jpg');	*/
+	/*background-repeat: repeat-y;*/
+	background-position: left;
+	/*color: #ffffff;*/
+	display: hidden;
+	font: bold 12px "Verdana", Arial, sans-serif;
+	height: 24px;
+	width: 811px;
+}
+
+div#botonera_ppal ul {
+	/*background-image: url('../img/fondo_contenido.jpg');*/
+	/*background-position: left;*/
+	/*background-repeat: repeat-y;*/
+	background-color: #FFFFFF;
+	float: right;
+	height: 24px;
+	list-style: none;
+}
+
+div#botonera_ppal ul li.barra_ppal {
+	color: #2d44a5;
+	float: left;
+	height: 24px;
+	margin: 0;
+	width:	109px;
+}
+
+li#ppal_activo {
+ 	background-image: url('../img/botonera/boton_ppal_active.jpg');
+ 	background-repeat: no-repeat;
+ 	color: #c777da;
+ 	cursor: default;
+	float: left;
+	height: 24px;
+	margin: 0 0 0 2px;
+	width:	109px;
+}
+
+span.ppal {
+	display: block;
+	font: bold 12px "Verdana", Arial, sans-serif;
+	line-height: 16px;
+	padding: 4px 2px;
+	text-align: center;
+	width: 105px;
+}
+
+li.barra_ppal a {
+	background-image: url('../img/botonera/boton_ppal.jpg');
+	background-position: top;
+ 	background-repeat: no-repeat;
+	color: #f0f9eb;
+	cursor: pointer;
+ 	display: block;
+	font: bold 12px "Verdana", Arial, sans-serif;
+	height: 24px;
+	width: 109px;
+}
+
+li.barra_ppal a:hover {
+	color: #DBA7E7;
+	background-position: bottom;
+}
+
+
+/************************************************************/
+/***** CONTENEDOR FOTOS *************************************/
+
+div#contenedor_secc_fotos_servicios {
+	/*background-image: url('../img/fondo_general_811px.jpg');	
+	background-repeat: repeat-y;*/
+	background-color: #FFFFFF;
+	height: 800px;
+	/*overflow: auto;*/
+	padding-top: 22px;
+	width:	811px;
+}
+
+div#contenedor_secc_fotos_fotos {
+	/*background-image: url('../img/fondo_general_811px.jpg');	
+	background-repeat: repeat-y;*/
+	background-color: #FFFFFF;
+	height: 400px;
+	/*overflow: auto;*/
+	padding-top: 22px;
+	width:	811px;
+}
+
+div#contenedor_secc_fotos_consejos {
+	/*background-image: url('../img/fondo_general_811px.jpg');	
+	background-repeat: repeat-y;*/
+	background-color: #FFFFFF;
+	height: 1000px;
+	/*overflow: auto;*/
+	padding-top: 22px;
+	width:	811px;
+}
+
+div#contenedor_secc_fotos_testimonios {
+	/*background-image: url('../img/fondo_general_811px.jpg');	
+	background-repeat: repeat-y;*/
+	background-color: #FFFFFF;
+	height: 1250px;
+	/*overflow: auto;*/
+	padding-top: 22px;
+	width:	811px;
+}
+
+/*********************************************************************/
+/**********		CONTENEDOR SERVICIOS / CONSEJOS	**************/
+
+div#contenedor_secc_fotos div#borde_derecho {
+    width: 3px;
+    height: 168px;
+    background-image: url(../img/borde_derecho.jpg);
+    background-repeat: repeat-y;
+    /*background-position: top right;*/
+    float: left;
+}
+
+div.novedad {
+	padding: 0;
+	margin: 0;
+	float: left;
+	margin: 0 0 42px 6px;
+	width: 775px;
+}
+
+div#bebes.novedad {
+	/*height: 168px;*/
+	border-bottom: none;
+	
+}
+
+img.foto_nov  {
+    margin-right: 20px;
+    float: left;
+	border: solid 1px #f5e8fa;
+    margin-left: 10px;
+	
+}
+
+
+
+div.novedad div.testi   {
+    height: 270px;
+	width: 265px;
+	float: left;
+}
+
+
+img.foto_nov#foto2  {
+    /*margin-right: 20px;*/
+    background-color: red;
+    /*width: 231px;*/
+    margin-left: 125px;
+}
+
+img.foto_nov_mas {
+    margin-right: 20px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	float: left;
+	border: solid 2px #666666;
+	
+	
+	}
+
+.ficha_novedad {
+	float: left;
+	padding: 0 10px 0 10px;
+	width: 490px;
+
+}
+
+ul.texto_novedades_servicios {
+	list-style: outside;
+	list-style-type: disc;
+	font-size: 11px;
+	margin: 4px 0 0 0;
+	/*padding: 0 0 0 14px;*/
+	text-align: justify;
+	width: 480px;
+
+
+font-size:11px;
+list-style-image:none;
+list-style-position:outside;
+
+
+
+
+
+
+
+
+
+}
+
+p.texto_novedades {
+	height: 80px;
+	margin: 4px 0 0 0;
+	text-align: justify;
+	width: 500px;
+}
+
+div#cont_novedades2 {
+	height: 168px;
+/*	border: 1px solid red;  */
+}
+
+p#barra_nav_novedades {
+	margin: 25px 0 0 240px;
+	text-align: right;
+	/*width: 526px;*/
+}
+
+a.link_nav_novedades:link, a.link_nav_novedades:visited  {
+	font: bold 9px "Verdana", Arial, sans-serif;
+	color:#C777DA;
+	float:right;
+	font-family:"Verdana",Arial,sans-serif;
+	font-size:10px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:normal;
+	/*margin:25px 0 0 10px;*/
+}
+
+a.link_nav_novedades:hover {
+	font: bold 9px "Verdana", Arial, sans-serif; color: #cc99cc;
+}
+
+p.texto_novedades_consejos {
+	
+    padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 20px;
+	text-align: justify;
+}
+
+p.texto_novedades_consejos#derecha {
+	margin-left: 420px;
+}
+
+p.texto_novedades_consejos_mas {
+	/*float: left;*/
+    padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 0px;
+	text-align: justify;
+}
+
+
+
+
+
+h3.titulo_consejos {
+	color: #c777da;
+	font-family:tahoma;
+	font-size: 14px;
+	padding-left: 255px;
+	text-align: left;
+	font-style:normal;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Esto esta para poder poner dos fotos */		
+div#contenedor_secc_fotos_consejos div.novedad div { 
+	width: 251px;
+	/*float: left;*/
+}
+
+
+p.texto_novedades_agenda {
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 0px;
+	text-align: left;
+}
+
+
+/*********************************************************************/
+/**********		CLIENTES	**************/
+/********************************************************************/
+
+div#contenedor_clientes {
+	background-image: url('../img/fondo_general_811px.jpg');	
+	background-repeat: repeat-y;
+	overflow: hidden;
+/*	height: 1525px;*/
+}
+
+div#contenido_clientes1 {
+	float: left;
+/*	height: 1500px;*/
+	overflow: hidden;
+	padding: 22px 20px 0 20px;
+	width: 519px;
+}
+
+div#contenido_clientes {
+/*
+	background-color: #fcfcfc;
+	border-top: solid 2px #b1cbe6;
+	border-right: solid 2px #ebdede;
+	border-bottom: solid 2px #ebdede;
+	border-left: solid 2px #b1cbe6;
+*/
+	font-size: 11px;
+/*	height: 1460px;*/
+	margin: 20px 0 0 0;
+	overflow: hidden;
+	padding: 0 0 0 36px;
+	text-align: justify;
+	width: 497px;
+}
+
+p#barra_nav_novedades_volver {
+	margin: 10px 20px 0 0;
+	color: red;
+	text-align: right;
+	/*width: 526px;*/
+}
+
+a.link_nav_novedades:link, a.link_nav_novedades:visited  {
+	font: bold 9px "Verdana", Arial, sans-serif; color: #2d44a5;
+    margin: 30px 25px 20px 0;
+    float: right;
+	color: #C777DA;
+	
+}
+
+a.link_nav_novedades:hover {
+	color:#E3C3EA;
+	font-family:tahoma;
+	font-size:10px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:normal;
+}
+
+
+/*************************************************/
+/**********		CONTENEDOR CONTACTO		**************/
+
+form {
+	margin: 0;
+	margin: 8px 0 0 0;
+}
+
+p.p_inputs {
+	height: 26px;
+	margin: 0;
+	padding: 0;
+}
+
+p.p_textarea {
+	height: 150px;
+	margin: 0;
+	padding: 0;
+}
+
+label.form_labels {
+	display: block;
+	float: left;
+	/*margin: 0 8px 0 0; 36px;*/
+	/*padding: 2px 0 0 36px;*/
+	text-align: left;
+	width: 56px;
+}
+
+.campos {
+	background-color:#FCFCFC;
+	border-color: #DFAFE9 #F5E8FA #F5E8FA #DFAFE9;
+	border-style:solid;
+	border-width: 2px;
+	font-size:11px;
+	width:370px;
+}
+
+p.p_inputs input {
+	height: 14px;
+}
+
+textarea#mensaje {
+	overflow: auto;
+}
+
+input#btn_enviar {
+	background-color: white;
+	cursor: pointer;
+	color: #c777da;
+	font: 12px "Thaoma", Arial, sans-serif;
+	text-decoration: none;
+    font-style: italic;
+	/*width: 100px;*/
+    border: medium none;
+	font-weight: bold;
+	line-height: normal;
+}
+
+input#btn_enviar:hover {
+	background-color: #ffffff;
+}
+
+p#p_enviar {
+	/*margin: 45px 65px 0 0;
+	padding: 0;*/
+	/*margin: 0px 65px 0 0;*/
+	margin-right: 0px;
+	padding: 0px;
+	padding-right: 30px;
+	/*padding: 20px 30px 0 0;*/
+	text-align: right;
+	margin-top: 10px;
+    
+}
+
+
+/*****************************************/
+/***** PIE DE PAGINA *********************/
+/*****************************************/
+
+div#pie {
+/*	background-color: transparent;*/
+	background-image: url('../img/fondo_pie.jpg');
+/*	background-position: top center;*/
+	background-repeat: no-repeat;
+	float: left;
+	height: 41px; /*60px;*/
+	text-align: center;
+	width:	811px;
+}
+
+div#pie p {
+	color: #666666;
+	float: left;
+	padding: 10px 0 0 0;
+	width: 760px;
+	/*-x-system-font:none;*/
+	font-family:"Thaoma",Arial,sans-serif;
+	font-size:10px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:normal;
+}
+
+img#publicidad_hormigon {
+/*	background-color: white;*/
+/*	border: solid 1px black;*/
+	border: none;
+	float: right;
+	margin-top: 10px;
+/*	padding: 6px;*/
+	padding: 0 12px 0 0;
+}
+
+
+
+
+
+
+
+
+/****************************************************************/
+/****    CONTENEDOR FOTOS, que viene de plantilla03             */
+/****************************************************************/
+
+
+
+
+div#contenedor_secc_fotos {
+	background-image: url(../img/secc_fotos/fondo_fotos.gif);
+	background-repeat: no-repeat;
+	height: 353px;
+	width:	811px;
+}
+
+h3.titulo_secc_fotos {
+	/*color: #c777da;*/
+/*    font-family: "Times New Roman", "Tahoma", Arial, sans-serif;*/
+	padding: 51px 0 22px 19px;
+	color:#666666;
+	font-family:tahoma;
+	font-size:14px;
+	font-style:normal;
+	font-weight:normal;
+		
+	
+}
+
+table#tabla_fotos {
+	margin: 0 0 0 16px;
+	padding: 0;
+}
+
+img.fotos {
+	cursor: pointer;
+    /*border: 1px dotted blue;*/
+	border: none;
+    /*padding: 0 9px 0 0;*/
+	width: 145px;
+	height: 145px;
+}
+
+img#primera.fotos {
+    margin-left: 23px;
+}
+
+
+p#barra_nav_fotos {
+	/*letter-spacing: -1px;*/
+	/*margin: 62px 0 0 300px;*/
+	width: 810px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	margin-top: 50px;
+	
+	
+	color:#C777DA;
+font-family:tahoma;
+font-size:13px;
+font-size-adjust:none;
+font-variant:normal;
+font-weight:bold;
+letter-spacing:0;
+line-height:normal;
+/*margin:62px 0 0 300px;*/
+/*width:260px;*/
+	
+	
+	
+	}
+
+a.link_ant_sig:link, a.link_ant_sig:visited, a.link_ant_sig:hover {
+		color:#666666;
+font-family:tahoma;
+font-size:10px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:lighter;
+letter-spacing:0;
+line-height:normal;
+	
+	
+	
+	
+	
+	
+}
+
+a.link_ant_sig_falso:link, a.link_ant_sig_falso:visited, a.link_ant_sig_falso:hover {
+	font: 10px "Verdana", Arial, sans-serif; color: #996666;
+	letter-spacing: -1px;
+        cursor: default;
+}
+
+
+a.simbolo_ant_sig_falso:link, a.simbolo_ant_sig_falso:visited, a.simbolo_ant_sig_falso:hover {
+	font: bold 15px "Verdana", Arial, sans-serif; color: #996666;
+	letter-spacing: -1px;
+        cursor: default;
+}
+
+span.link_ant_sig_falso {
+	letter-spacing: -1px;
+        cursor: default;
+		
+		
+		
+		color:#666666;
+cursor:default;
+font-family:tahoma;
+font-size:10px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:lighter;
+letter-spacing:0;
+line-height:normal;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+}
+
+
+span.simbolo_ant_sig_falso {
+	
+	letter-spacing: -1px;
+        
+		
+		color:#AA4ECA;
+cursor:default;
+font-family:tahoma;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bolder;
+letter-spacing:0;
+line-height:normal;
+		
+		
+		
+		
+}
+
+
+a.simbolo_ant_sig:link, a.simbolo_ant_sig:visited, a.simbolo_ant_sig:hover {
+	
+	letter-spacing: -1px;
+	
+	
+	color:#666666;
+cursor:default;
+font-family:tahoma;
+font-size:10px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:lighter;
+letter-spacing:0;
+line-height:normal;
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+/*********************************************************************/
+/**********		QUIEN SOY, PRESENTACION DE ZULMA	**************/
+/********************************************************************/
+
+
+
+div#txt_quiensoy {
+  float: left;
+  width: 580px;
+  height: 380px;
+  background-image: url('../img/pop-up-fondo.jpg');
+}
+
+
+div#txt_quiensoy p {
+  float: left;
+  margin: 35px 20px 35px 20px;
+  text-align: justify;
+  font-family: Times New Roman, Sanserif;
+  font-size: 13px;
+}
+
+div#txt_quiensoy p span#zulma_titulo {
+	color: #C777DA;
+	font-weight: bold;
+}
+
+
+
+
+
