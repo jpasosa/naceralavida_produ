@@ -50,10 +50,18 @@
 			$hayErrores = true;
 		}
 
-		if(!ereg("([-!#\$%&'*+./0-9=?A-Z^_`a-z{|}~])+@([-!#\$%&'*+/0-9=?A-Z^_`a-z{|}~]+\\.)+[a-zA-Z]{2,6}\$",$email))
+		// DEPRECATED
+		// if(!ereg("([-!#\$%&'*+./0-9=?A-Z^_`a-z{|}~])+@([-!#\$%&'*+/0-9=?A-Z^_`a-z{|}~]+\\.)+[a-zA-Z]{2,6}\$",$email))
+		// {
+		// 	$Error_email = "SI";
+		// }
+
+		if(!filter_var($email, FILTER_VALIDATE_EMAIL))
 		{
 			$Error_email = "SI";
 		}
+
+
 
 		if ($Error_email=="SI")
 		{
