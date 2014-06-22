@@ -1,19 +1,24 @@
 <?php
-	$seccion = 'contacto';
-	$Error_email="no";
+
+	$seccion 		= 	'contacto';
+	$Error_email	=	"no";
 
 	function formatear_texto($texto)
 	{
-		$texto = trim ($texto);		// saca los espacios de adelante y atras
-		$texto = strip_tags ($texto); // saca los tags
-		$texto = strtoupper($texto); // pasa todo a mayusculas
+		$texto = trim ($texto);			// saca los espacios de adelante y atras
+		$texto = strip_tags ($texto); 	// saca los tags
+		$texto = strtoupper($texto); 	// pasa todo a mayusculas
 		$texto = strtr ($texto, "áéíóúüñ", "ÁÉÍÓÚÜÑ");  // convierte las letras con acentos a mayusculas con acentos
 		$texto = strtr ($texto, '"', ' ');
 		$texto = htmlspecialchars( $texto);	// saca los tags, creo que es igual al strip_tags
-		return $texto;		// deveulve el texto formateado
+		return $texto;					// Deveulve el texto formateado
 	}
+
+
 /*	$detalleErrores = ''; */
 /*	$noerrores = "Los campos que poseen aster&iacute;sco deben completarse obligatoriamente."; */
+
+	$hayErrores = true;
 
 	if ( isset($_REQUEST['action']) && ($_REQUEST['action'] == "Enviar Consulta") )
 	{
@@ -132,7 +137,7 @@
 
 	}
 }
-	if ($_REQUEST['action'] != "Enviar Consulta" || $hayErrores == true)
+	if ( (isset($_REQUEST['action']) && $_REQUEST['action'] != "Enviar Consulta") || $hayErrores == true)
 	{
 
 
@@ -146,30 +151,34 @@
 		<div id="contenido">
 			<h3 class="titulo">Envianos Tus Comentarios</h3>
 			<div class="continente">
-				<form name="form_contacto" id="form_contacto" method="post" action="<?php echo $_SERVER['PHP_SELF']?>">
+				<form name="form_contacto" id="form_contacto" method="post" action="<?php if (isset($_SERVER['PHP_SELF'])): echo $_SERVER['PHP_SELF']; endif; ?>">
 					<p class="p_inputs">
 						<label class="form_labels">Nombre:</label>
-						<input class="campos" type="text" name="nombre" size="61" value="<?php echo $nombre; ?>" />
+						<input class="campos" type="text" name="nombre" size="61" value="<?php if (isset($nombre)):echo $nombre; endif; ?>" />
 					</p>
 					<p class="p_inputs">
 						<label class="form_labels">Apellido:</label>
-						<input class="campos" type="text" name="apellido" size="61" value="<?php echo $apellido; ?>" />
+						<input class="campos" type="text" name="apellido" size="61" value="<?php if (isset($apellido)):echo $apellido; endif; ?>" />
 					</p>
 					<p class="p_inputs">
 						<label class="form_labels">E-mail:</label>
-						<input class="campos" type="text" name="email" size="61" value="<?php echo $email; ?>" />
+						<input class="campos" type="text" name="email" size="61" value="<?php if (isset($email)):echo $email; endif; ?>" />
 					</p>
 					<p class="p_inputs">
 						<label class="form_labels">Telefono:</label>
-						<input class="campos" type="text" name="telefono" size="61" value="<?php echo $telefono; ?>" />
+						<input class="campos" type="text" name="telefono" size="61" value="<?php if (isset($telefono)):echo $telefono; endif; ?>" />
 					</p>
 					<p class="p_textarea">
 						<label class="form_labels">Mensaje:</label>
-						<textarea class="campos" id="mensaje" cols="50" name="mensaje" rows="6" value="<?php echo $mensaje; ?>" ></textarea>
+						<textarea class="campos" id="mensaje" cols="50" name="mensaje" rows="6" value="<?php if (isset($mensaje)):echo $mensaje; endif; ?>" ></textarea>
 					</p>
 					<p id="mensaje_error">
-						<?php echo $detalleErrores; ?>
-						<?php echo $noerrores; ?>
+						<?php if (isset($detalleErrores)): ?>
+							<?php echo $detalleErrores; ?>
+						<?php endif; ?>
+						<?php if (isset($noerrores)): ?>
+							<?php echo $noerrores; ?>
+						<?php endif; ?>
 					</p>
 					<p>
 						<input type="hidden" name="action" value="Enviar Consulta"/>
